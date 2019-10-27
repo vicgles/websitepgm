@@ -1,0 +1,304 @@
+@font-face{
+	font-family:'FonteLogo'; 
+	src: url("../_fonts/Raleway-Black.ttf");
+
+}
+@font-face{
+	font-family: 'Fonteh2';
+	src: url("../_fonts/Solo.ttf");
+}
+@font-face{
+	font-family: 'FonteMenu';
+	src: url("../_fonts/Brengkel-Regular.otf");
+}
+@font-face{
+	font-family: 'FonteConteudo';
+	src: url("../_fonts/OpenSans-Light.ttf");
+}
+@keyframes animacao{
+	25%{
+		opacity: 1;
+		transform:scale(1.1,1.1);
+
+	}
+	50%{
+		opacity: 0;
+	}
+}
+
+
+       
+
+
+				body{
+					background-image: url("../_img/back-01.jpg");
+					background-attachment: fixed;
+					
+
+			   	 	
+				    
+					
+					
+				}
+
+
+/*FORMATAÇÃO RODAPE*/
+				footer{
+					 height: 15px;
+      					margin-top: 30px;
+      					width: 100%;
+      					margin: 30px 70px 50px auto;
+
+      					 font-weight:bold;
+      					  
+      					  bottom:0px;
+
+           				 left:0px;
+
+      
+
+
+
+					
+				}
+				footer#rodape p{
+					text-align: center;
+					background-color: rgba(0,18,90,0.7);
+					background-size: cover;
+					color: white;
+					padding:30px;
+					font-family: 'Fonteh2', sans-serif;
+				}	
+				footer#rodape a{
+					text-decoration-line:none;
+					color: white;
+					text-align: center;
+					font-family: 'FonteLogo', sans-serif;
+
+
+				}
+
+/*FORMATAÇÃO RODAPE*/
+
+
+
+
+/*FORMATAÇÃO INTERFACE*/
+				div#interface{
+					font-family: 'FonteConteudo', sans-serif;
+					width: 1100px;
+					margin: 80px auto 40px auto;
+					background-color: white;
+					box-shadow: 0px 0px 10px #001880;
+					padding: 20px;
+				}
+/*FORMATAÇÃO INTERFACE*/	
+
+				p{
+					text-align: justify; 
+					text-indent: 50px;
+					
+
+				}
+				
+					
+					
+					
+				
+/*FORMATAÇÃO SLIDER*/
+				section#galeria{
+					margin: auto 15px auto 15px black;
+					width: relative;
+					height: 400px;
+					position: relative;
+					overflow: hidden;
+					border-radius: 15px;
+					box-sizing: border-box;
+					background: rgba(0,0,0,.1);
+					box-shadow: black;
+
+					
+
+
+
+
+
+				}
+				section#galeria img#foto{
+					position: absolute;
+					box-sizing: border-box;
+					opacity: 0;
+					animation-name: animacao;
+					animation-duration:20s;
+					animation-iteration-count: infinite; 
+
+					width: 100%;
+					height: 100%;
+					padding-left: 150px;
+					padding-right: 150px;
+					
+					
+
+
+
+
+			}
+				#foto:nth-child(1){
+
+				}
+				#foto:nth-child(2){
+					animation-delay: 5s;
+				}
+				#foto:nth-child(3){
+					animation-delay: 10s;
+				}
+				#foto:nth-child(4){
+					animation-delay: 15s;
+				}
+
+/*FORMATAÇÃO SLIDER*/
+
+
+
+
+
+
+
+/*FORMATAÇÃO CABECALHO*/
+				header#cabecalho img#icone{
+					position: absolute;
+					left:705px; 
+					top:56px;	
+				}
+				header#cabecalho{
+					border-bottom: 1px #606060 solid;
+					height: 160px;
+					background: url("../_img/secretaria-logo.jpg") no-repeat 150px 75px;
+				}
+				header#cabecalho h1{
+					font-family: 'FonteLogo', sans-serif;
+					font-size: 55px;
+					color: #001880;
+					text-shadow: 1px 1px 1px rgba(0,0,0,1);
+					padding: 0px;
+					margin-bottom: -15px;
+					margin-left: 150px;
+					margin-top: 80px;
+
+				}
+				header#cabecalho h2{
+					font-family: 'Fonteh2', sans-serif;
+					color: #001880;
+					font-size: 15pt;
+					padding: 0px;
+					margin-top: 0px;
+					margin-left: 155px;
+				}
+
+/*FORMATAÇÃO CABECALHO*/
+
+
+
+
+
+
+
+
+
+/*FORMATAÇÃO FOTOS*/				
+				figure.foto-legenda{
+					position: relative;
+					border:8px solid white;	
+					box-shadow: 1px 1px 4px black;
+				}
+				figure.foto-legenda img{
+					width: 100%;
+					height: 100%;
+				} 
+				figure.foto-legenda figcaption{
+					opacity: 0;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top:0px;
+					background-color: rgba(0,0,0,0.4);
+					color: white;
+					padding: 15px;
+					box-sizing: border-box;
+				}
+				figure.foto-legenda:hover figcaption{
+					transition: opacity 0.5s;
+					opacity: 1;
+				}
+				
+/*FORMATAÇÃO FOTOS*/	
+
+
+
+/*FORMATAÇÃO MENU*/	
+				nav#menu{
+					width: auto;
+					display: block;
+					margin: auto;
+
+				}				
+				nav#menu ul{
+					list-style: none;
+					text-transform: uppercase;
+					position: absolute;
+					top: -20px;
+					left: 250px;
+
+				}
+				nav#menu li{
+					font-family: 'FonteMenu', sans-serif;
+					font-size: 25px;
+					display: inline-block;
+					background-color: white;
+					padding: 15px;
+					margin: 2px;
+
+					transition: background-color 1s;
+				}
+				nav#menu h1{
+					display: none;
+				}
+				nav#menu li:hover{
+					background-color: #001880;
+
+				}
+				nav#menu a{
+					color:black;
+					text-decoration: none;
+					padding: 30px;
+
+
+				}
+				nav#menu a:hover{
+					color:white;
+					
+				}
+/*FORMATAÇÃO MENU*/
+
+
+
+	
+
+
+
+
+
+/*FORMATAÇÃO CONTEUDO NOTICIA PRINCIAL*/	
+				article#noticia-principal h2 {
+					font-size: 20pt;
+					color: #001880;
+					background-color: #dddddd;
+					padding: 5px 0px 5px 0px;
+					margin: 10px;
+
+				}
+
+			
+
+
+/*FORMATAÇÃO CONTEUDO NOTICIA PRINCIAL*/
