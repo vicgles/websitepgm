@@ -31,16 +31,16 @@
 
 
 				body{
-					background-image: url("../_img/back-01.jpg");
-					background-attachment: fixed;
-					
-
-			   	 	
-				    
+					background: rgb(216,39,235);
+					background: linear-gradient(90deg, rgba(216,39,235,1) 0%, rgba(106,94,235,1) 47%, rgba(139,164,223,1) 100%);
+					padding: 15px;
+					box-sizing: border-box;
 					
 					
 				}
-
+				img{
+					max-width: 100%;
+				}
 
 /*FORMATAÇÃO RODAPE*/
 				footer{
@@ -86,7 +86,7 @@
 /*FORMATAÇÃO INTERFACE*/
 				div#interface{
 					font-family: 'FonteConteudo', sans-serif;
-					width: 1100px;
+					max-width: 1100px;
 					margin: 80px auto 40px auto;
 					background-color: white;
 					box-shadow: 0px 0px 10px #001880;
@@ -119,35 +119,46 @@
 
 
 /*FORMATAÇÃO CABECALHO*/
-				header#cabecalho img#icone{
-					position: absolute;
-					left:705px; 
-					top:56px;	
-				}
-				header#cabecalho{
+				.top {
+					display: flex;
+					align-items: center;
+					justify-content: space-around;
 					border-bottom: 1px #606060 solid;
-					height: 160px;
-					background: url("../_img/secretaria-logo.jpg") no-repeat 150px 75px;
+					padding-bottom: 50px;
 				}
-				header#cabecalho h1{
+				.top > div{
+					text-align: center;
+				}
+				.top h1{
 					font-family: 'FonteLogo', sans-serif;
 					font-size: 55px;
 					color: #001880;
 					text-shadow: 1px 1px 1px rgba(0,0,0,1);
 					padding: 0px;
 					margin-bottom: -15px;
-					margin-left: 150px;
 					margin-top: 80px;
 
 				}
-				header#cabecalho h2{
+				.top h2{
 					font-family: 'Fonteh2', sans-serif;
 					color: #001880;
-					font-size: 15pt;
+					font-size: 24px;
 					padding: 0px;
 					margin-top: 0px;
-					margin-left: 155px;
 				}
+			@media (max-width:720px){
+				.top {
+					flex-direction: column;
+				}
+				.top > img {
+					margin-top: 30px;
+				}
+				.top h1{
+					font-size: 35px;
+					margin-bottom: -5px;
+				}
+
+			}
 
 /*FORMATAÇÃO CABECALHO*/
 
@@ -190,18 +201,17 @@
 
 
 /*FORMATAÇÃO MENU*/	
-				nav#menu{
+				/* nav#menu{
+					width: 50%;
 					width: auto;
 					display: block;
 					margin: auto;
 
-				}				
+				}				 */
 				nav#menu ul{
 					list-style: none;
 					text-transform: uppercase;
-					position: absolute;
-					top: -20px;
-					left: 250px;
+					margin-bottom: 50px;
 
 				}
 				nav#menu li{
@@ -214,9 +224,6 @@
 
 					transition: background-color 1s;
 				}
-				nav#menu h1{
-					display: none;
-				}
 				nav#menu li:hover{
 					background-color: #001880;
 
@@ -226,11 +233,37 @@
 					text-decoration: none;
 					padding: 30px;
 
-
 				}
 				nav#menu a:hover{
 					color:white;
 					
+				}
+				
+				#menu a.icon {
+					display: none;
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+				@media (max-width:720px){
+					#myLinks{
+						display: none;
+					}
+					#menu a.icon {
+						display: block;
+					}
+					nav#menu  ul{
+						margin-bottom: 10px;
+					}
+					nav#menu li{
+						display: block;
+						font-size: 20px;
+						padding: 0;
+					}
+					nav#menu li a{
+						padding: 10px 0;
+						display: block;
+					}
 				}
 /*FORMATAÇÃO MENU*/
 
@@ -248,9 +281,11 @@
 					color: #001880;
 					
 					padding: 5px 0px 5px 0px;
-					margin: 10px;
+					margin: 30px;
 
 				}
+
+			
 
 			
 
