@@ -43,17 +43,19 @@
 				}
 
 /*FORMATAÇÃO RODAPE*/
-				footer{
-					 height: 15px;
-      					margin-top: 30px;
-      					width: 100%;
-      					margin: 30px 70px 50px auto;
+				.footer{
+					
+					 font-weight:bold;
+					  
+    
+					
 
-      					 font-weight:bold;
-      					  
-      					  bottom:0px;
+		
+    				
+      				
+							
+							
 
-           				 left:0px;
 
       
 
