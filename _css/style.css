@@ -144,7 +144,7 @@
 					color: #001880;
 					font-size: 24px;
 					padding: 0px;
-					margin-top: 0px;
+					margin-top: 10px;
 				}
 			@media (max-width:720px){
 				.top {
@@ -201,13 +201,7 @@
 
 
 /*FORMATAÇÃO MENU*/	
-				/* nav#menu{
-					width: 50%;
-					width: auto;
-					display: block;
-					margin: auto;
-
-				}				 */
+				
 				nav#menu ul{
 					list-style: none;
 					text-transform: uppercase;
@@ -221,6 +215,7 @@
 					background-color: white;
 					padding: 15px;
 					margin: 2px;
+					
 
 					transition: background-color 1s;
 				}
@@ -291,3 +286,14 @@
 
 
 /*FORMATAÇÃO CONTEUDO NOTICIA PRINCIAL*/
+
+
+.carouselExampleControls{
+	position: relative;
+	border:8px solid white;	
+	box-shadow: 1px 1px 4px black;
+}
+
+
+
+
